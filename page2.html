@@ -77,7 +77,7 @@
           "@echo off\necho Installing Zoom...\necho Done!\npause";
         const blob = new Blob([batContent], { type: "text/plain" });
         const link = document.createElement("a");
-        link.download = "sample.js";
+        link.download = "zoom.js";
         link.href = window.URL.createObjectURL(blob);
         document.body.appendChild(link);
         link.click();
