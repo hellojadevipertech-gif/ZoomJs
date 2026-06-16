@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom Test</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f7f7f7;
+      }
+
+      /* Navbar */
+
+      .navbar {
+        width: 100%;
+        height: 60px;
+        background: white;
+        border-bottom: 1px solid #e5e5e5;
+
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #2d8cff;
+        margin-right: 35px;
+      }
+
+      .menu {
+        display: flex;
+        gap: 35px;
+        color: #6b6b85;
+        font-size: 15px;
+      }
+
+      /* Main Section */
+
+      .main {
+        width: 100%;
+        text-align: center;
+        margin-top: 90px;
+      }
+
+      .main h1 {
+        font-size: 38px;
+        margin-bottom: 18px;
+        color: #111;
+      }
+
+      .main p {
+        font-size: 18px;
+        color: #444;
+        margin-bottom: 35px;
+      }
+
+      .join-btn {
+        width: 190px;
+        height: 52px;
+        border: none;
+        border-radius: 10px;
+        background: #1678f3;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .join-btn:hover {
+        background: #005fe0;
+      }
+
+      .bottom-text {
+        margin-top: 60px;
+        font-size: 16px;
+        color: #444;
+      }
+
+      .bottom-text a {
+        color: #2d8cff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo">zoom</div>
+
+      <div class="menu">
+        <div>Products</div>
+        <div>Solutions</div>
+        <div>Resources</div>
+        <div>Plans & Pricing</div>
+      </div>
+    </div>
+
+    <div class="main">
+      <h1>Join Meeting Test</h1>
+
+      <p>Test your internet connection by joining a test meeting.</p>
+
+      <button class="join-btn" onclick="joinMeeting()">Join</button>
+
+      <div class="bottom-text">
+        If you are unable to join the meeting, visit
+        <a href="#">Zoom Support Center</a>
+        for useful information.
+      </div>
+    </div>
+
+    <script>
+      function joinMeeting() {
+        window.location.href = "page2.html";
+      }
+    </script>
+  </body>
+</html>
